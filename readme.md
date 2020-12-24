@@ -47,6 +47,7 @@ help small streamer gain more visibility
     - might switch to Prisma
 
 ### typeORM
+- [Active Record v Data Mapper](https://stackoverflow.com/questions/3828265/is-data-mapper-a-more-modern-trend-than-active-record)
 - Active Record pattern (used to start things off)
     - query methods defined in model itself
     - keeps things simple, for smaller apps
