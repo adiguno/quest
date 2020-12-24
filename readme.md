@@ -1,3 +1,6 @@
+## goals
+help small streamer gain more visibility
+
 ## notes
 - 
     - `npm init -y` to initialize with defaults
@@ -28,9 +31,28 @@
 
         
 
-## basic arch
+## basic arch v1 - naive
 - User
     - ID
     - USERNAME
     - PASSWORD
     - POINTS
+- Post
+    - ID
+    - Content
+    - UserID
+
+## stack
+- typeORM
+    - might switch to Prisma
+
+### typeORM
+- Active Record pattern (used to start things off)
+    - query methods defined in model itself
+    - keeps things simple, for smaller apps
+    - entities must extend the `BaseEntity` class
+    - `export class User extends BaseEntity {`
+- Data Mapper pattern (todo)
+    - query methods define in repository class (like spring)
+    - helps with maintainability
+    - `const userRepository = connection.getRepository(User);`
