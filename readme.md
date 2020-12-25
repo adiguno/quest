@@ -31,16 +31,8 @@ help small streamer gain more visibility
 
         
 
-## basic arch v1 - naive
-- User
-    - ID
-    - USERNAME
-    - PASSWORD
-    - POINTS
-- Post
-    - ID
-    - Content
-    - UserID
+## __basic arch v1 - naive__
+![naive](arch-naive.png)
 
 ## stack
 - typeORM
